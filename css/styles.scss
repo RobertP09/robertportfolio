@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+/* Variables*/
+$primary-color: #424a57;
+$primary-color-light: lighten($primary-color, 15%);
+$primary-color-darken: darken($primary-color, 15%);
+$highlightcolor: #00adff;
+
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.section {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 100%;
+    padding-left: 325px;
+}
+.button {
+    width: auto;
+    padding: 10px 22px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: $primary-color;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        background-color: $primary-color;
+        transition: all 0.3s ease-in;
+        box-shadow: -5px -5px 10px 4px rgba($color: $primary-color-light, $alpha: .7),
+        5px 5px 10px 4px rgba($color: $primary-color-darken, $alpha: .6);
+    }
+}
+
+.header {
+    background: $primary-color;
+    display: inline-flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    padding: 30px 15px 30px 30px;
+    position: absolute;
+    border-right: 1px solid #efefef;
+    width: 325px;
+
+    &__logo {
+        color: #fff;
+        text-decoration: none;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #efefef;
+    }
+
+    &__title {
+        font-size: 2.4em;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &__subtitle{
+        color: #fff;
+        font-size: 1.4em;
+    }
+
+    &__nav {
+        color: #fff;
+
+    }
+    &__icon {
+        width: auto;
+        height: 28px;
+    }
+    &__link {
+        text-decoration: none;
+        display: block;
+        color: #fff;
+        margin: 25px 0 15px;
+        font-size: 1.8em;
+        text-align: left;
+        transition: all 0.2s ease-in-out;
+
+        &--active {
+            color: $highlightcolor;
+            transition: all 0.2s ease-in-out ;
+        }
+    }
+}
+
+.main {
+    background: $primary-color;
+    display: block;
+    padding: 50px 30px;
+    padding-left: 400px;
+    width: 100%;
+
+    &__title {
+        color: #fff;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: left;
+        line-height: 155%;
+        margin-bottom: 10%;
+
+        &--underline {
+            border-bottom: 3px solid $highlightcolor;
+        }
+        &--block {
+            background-color: $highlightcolor;
+        }
+    }
+    &__container {
+        margin: 10% auto;
+    }
+    &__button {
+        color: #fff;
+        text-decoration: none;
+        transition: all 0.4s ease-in-out;
+        position: relative;
+        padding-right: 25px;
+    }
+    &__button:hover {
+        padding-right: 30px;
+    }
+    &__button::after {
+        content: " ";
+        transition: all 0.4s ease-in-out;
+    }
+    &__button:hover::after {
+        content:url('../img/downArrow-small.png');
+        position: absolute;
+        right: 6px;
+        top: 9px;
+        transition: all 0.4s ease-in-out;
+    }
+}
+
+.about {
+    background-color: $primary-color;
+    display: flex;
+
+    .container {
+        background: $highlightcolor;
+        display: flex;
+        height: 100px;
+        width: 100%;
+        padding-left: 400px;
+    }
+
+    &__title {
+        color: #fff;
+        font-size: 2.8em;
+        align-self: flex-end;
+    }
+
+}

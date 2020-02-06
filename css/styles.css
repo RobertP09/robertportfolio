@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+/* Variables*/
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Muli', sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.section {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  padding-left: 325px;
+}
+
+.button {
+  width: auto;
+  padding: 10px 22px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background-color: #424a57;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.button:hover {
+  background-color: #424a57;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: -5px -5px 10px 4px rgba(99, 111, 131, 0.7), 5px 5px 10px 4px rgba(33, 37, 44, 0.6);
+          box-shadow: -5px -5px 10px 4px rgba(99, 111, 131, 0.7), 5px 5px 10px 4px rgba(33, 37, 44, 0.6);
+}
+
+.header {
+  background: #424a57;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  height: 100%;
+  padding: 30px 15px 30px 30px;
+  position: absolute;
+  border-right: 1px solid #efefef;
+  width: 325px;
+}
+
+.header__logo {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #efefef;
+}
+
+.header__title {
+  font-size: 2.4em;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header__subtitle {
+  color: #fff;
+  font-size: 1.4em;
+}
+
+.header__nav {
+  color: #fff;
+}
+
+.header__icon {
+  width: auto;
+  height: 28px;
+}
+
+.header__link {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  margin: 25px 0 15px;
+  font-size: 1.8em;
+  text-align: left;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.header__link--active {
+  color: #00adff;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.main {
+  background: #424a57;
+  display: block;
+  padding: 50px 30px;
+  padding-left: 400px;
+  width: 100%;
+}
+
+.main__title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: left;
+  line-height: 155%;
+  margin-bottom: 10%;
+}
+
+.main__title--underline {
+  border-bottom: 3px solid #00adff;
+}
+
+.main__title--block {
+  background-color: #00adff;
+}
+
+.main__container {
+  margin: 10% auto;
+}
+
+.main__button {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: relative;
+  padding-right: 25px;
+}
+
+.main__button:hover {
+  padding-right: 30px;
+}
+
+.main__button::after {
+  content: " ";
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main__button:hover::after {
+  content: url("../img/downArrow-small.png");
+  position: absolute;
+  right: 6px;
+  top: 9px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.about {
+  background-color: #424a57;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .container {
+  background: #00adff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100px;
+  width: 100%;
+  padding-left: 400px;
+}
+
+.about__title {
+  color: #fff;
+  font-size: 2.8em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+/*# sourceMappingURL=styles.css.map */
