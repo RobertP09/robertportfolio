@@ -17,6 +17,10 @@ $highlightcolor: #00adff;
 body, html {
     width: 100%;
     height: 100%;
+    
+}
+html {
+    scroll-behavior:smooth
 }
 
 .section {
@@ -26,8 +30,16 @@ body, html {
 
 .container {
     width: 100%;
-    padding-left: 325px;
 }
+
+.separator {
+    margin-left: 325px;
+}
+
+.text {
+    color: #ffffff;
+}
+
 .button {
     width: auto;
     padding: 10px 22px;
@@ -35,12 +47,13 @@ body, html {
     border: 1px solid #fff;
     background-color: $primary-color;
     transition: all 0.3s ease-in;
+    font-weight: 500;
 
     &:hover {
-        background-color: $primary-color;
         transition: all 0.3s ease-in;
-        box-shadow: -5px -5px 10px 4px rgba($color: $primary-color-light, $alpha: .7),
-        5px 5px 10px 4px rgba($color: $primary-color-darken, $alpha: .6);
+        background: #424a57;
+        box-shadow:  15px 15px 30px #363d47, 
+             -15px -15px 30px #4e5767;
     }
 }
 
@@ -48,9 +61,9 @@ body, html {
     background: $primary-color;
     display: inline-flex;
     flex-flow: column nowrap;
-    height: 100%;
+    height: 100vh;
     padding: 30px 15px 30px 30px;
-    position: absolute;
+    position: fixed;
     border-right: 1px solid #efefef;
     width: 325px;
 
@@ -74,19 +87,20 @@ body, html {
 
     &__nav {
         color: #fff;
-
     }
     &__icon {
         width: auto;
         height: 28px;
+        padding-right: 5px;
     }
     &__link {
         text-decoration: none;
-        display: block;
+        display: flex;
         color: #fff;
         margin: 25px 0 15px;
         font-size: 1.8em;
         text-align: left;
+        align-items: center;
         transition: all 0.2s ease-in-out;
 
         &--active {
@@ -100,13 +114,12 @@ body, html {
     background: $primary-color;
     display: block;
     padding: 50px 30px;
-    padding-left: 400px;
     width: 100%;
 
     &__title {
         color: #fff;
         font-weight: bold;
-        font-size: 3em;
+        font-size: 4em;
         text-align: left;
         line-height: 155%;
         margin-bottom: 10%;
@@ -127,6 +140,7 @@ body, html {
         transition: all 0.4s ease-in-out;
         position: relative;
         padding-right: 25px;
+        font-size: 1.7em;
     }
     &__button:hover {
         padding-right: 30px;
@@ -136,9 +150,9 @@ body, html {
         transition: all 0.4s ease-in-out;
     }
     &__button:hover::after {
-        content:url('../img/downArrow-small.png');
+        content: "\2193";
         position: absolute;
-        right: 6px;
+        right: 10px;
         top: 9px;
         transition: all 0.4s ease-in-out;
     }
@@ -146,20 +160,35 @@ body, html {
 
 .about {
     background-color: $primary-color;
-    display: flex;
 
     .container {
         background: $highlightcolor;
-        display: flex;
         height: 100px;
         width: 100%;
-        padding-left: 400px;
+        display: flex;
+        padding-left: 25px;
     }
-
+    &__content {
+        display: flex;
+        padding: 30px 25px;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+    }
     &__title {
         color: #fff;
         font-size: 2.8em;
         align-self: flex-end;
     }
-
+    &__picture {
+        width: 300px;
+        height: 100%;
+        border-radius: 35px;
+        margin-right: 30px;
+    }
+    &__text {
+        font-size: 1.4em;
+        max-width: 700px;
+        margin: 20px auto;
+    }
 }
