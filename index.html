@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Robert Perez - Software Engineer</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("user_662iBmGvhzEJRf8cU61hk");
+       })();
+    </script>
 </head>
 <body>
     <header class="header">
@@ -67,11 +73,53 @@
         </section>
         <section class="section projects">
             <div class="container">
-                <h2 class="about__title title" id="projects">Projects</h2>
+                <h2 class="projects__title title" id="projects">Projects</h2>
+            </div>
+            <div class="projects__card">
+                <h3 class="projects__cardTitle">title</h3>
+                <img src="/img/#" alt="project picture">
+                <p class="projects__description">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ratione blanditiis amet omnis
+                alias nihil esse beatae tempora, odio nisi sint laboriosam
+                fugit hic repellendus pariatur iste aperiam quo possimus
+                aspernatur?</p>
+            </div>
+            <div class="projects__card">
+                <h3 class="projects__cardTitle">title</h3>
+                <img src="/img/#" alt="project picture">
+                <p class="projects__description">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ratione blanditiis amet omnis
+                alias nihil esse beatae tempora, odio nisi sint laboriosam
+                fugit hic repellendus pariatur iste aperiam quo possimus
+                aspernatur?</p>
+            </div>
+            <div class="projects__card">
+                <h3 class="projects__cardTitle">title</h3>
+                <img src="/img/#" alt="project picture">
+                <p class="projects__description">Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Ratione blanditiis amet omnis
+                alias nihil esse beatae tempora, odio nisi sint laboriosam
+                fugit hic repellendus pariatur iste aperiam quo possimus
+                aspernatur?</p>
             </div>
         </section>
         <section class="section contact">
-            <h2 class="about__title title" id="ABOUT">Contact</h2>
+            <div class="container">
+                <h2 class="contact__title title" id="contact">Contact</h2>
+            </div>
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
+                <label>Name</label>
+                <input type="text" name="user_name">
+                <label>Email</label>
+                <input type="email" name="user_email">
+                <label>Message</label>
+                <textarea name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <h4 class="contact__subtitle title">OR</h4>
+                <a href="https://linkedin.com">Check out my linkedin</a>
+
         </section>
     </section>
     <script src="./js/main.js"></script>
