@@ -102,7 +102,7 @@
             <div class="container">
                 <h2 class="contact__title title" id="contact">Contact</h2>
             </div>
-            <form method="post" name="myemailform" action="/form-to-email.php">
+            <form method="POST" name="myemailform" action="/form-to-email.php">
 
                 Enter Name:	<input type="text" name="name">
                 
@@ -110,7 +110,8 @@
                 
                 Enter Message:	<textarea name="message"></textarea>
                 
-                <input type="submit" value="Send Form">
+                <button type="submit" name="submit" id="submitbutton" value="Submit" class="mainButton">SUBMIT</button>
+
                 </form>
             <h4 class="contact__subtitle title">OR</h4>
                 <a href="https://linkedin.com">Check out my linkedin</a>
