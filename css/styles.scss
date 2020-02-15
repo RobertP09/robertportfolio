@@ -23,6 +23,11 @@ html {
     scroll-behavior:smooth
 }
 
+.title {
+    color: #fff;
+    font-size: 2.8em;
+    align-self: flex-end;
+}
 .section {
     width: 100%;
     height: auto;
@@ -30,6 +35,10 @@ html {
 
 .container {
     width: 100%;
+    background: $highlightcolor;
+    height: 100px;
+    display: flex;
+    padding-left: 25px;
 }
 
 .separator {
@@ -133,6 +142,8 @@ html {
     }
     &__container {
         margin: 10% auto;
+        background: $primary-color;
+        height: auto;
     }
     &__button {
         color: #fff;
@@ -162,7 +173,6 @@ html {
     background-color: $primary-color;
 
     .container {
-        background: $highlightcolor;
         height: 100px;
         width: 100%;
         display: flex;
@@ -179,6 +189,11 @@ html {
         color: #fff;
         font-size: 2.8em;
         align-self: flex-end;
+    }
+    &__pictureBox {
+        background: rgb(66,74,87);
+        background: linear-gradient(0deg, rgba(66,74,87,1) 0%, rgba(66,74,87,0) 50%);
+
     }
     &__picture {
         width: 300px;

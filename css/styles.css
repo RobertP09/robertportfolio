@@ -18,6 +18,13 @@ html {
   scroll-behavior: smooth;
 }
 
+.title {
+  color: #fff;
+  font-size: 2.8em;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 .section {
   width: 100%;
   height: auto;
@@ -25,6 +32,12 @@ html {
 
 .container {
   width: 100%;
+  background: #00adff;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 25px;
 }
 
 .separator {
@@ -146,6 +159,8 @@ html {
 
 .main__container {
   margin: 10% auto;
+  background: #424a57;
+  height: auto;
 }
 
 .main__button {
@@ -182,7 +197,6 @@ html {
 }
 
 .about .container {
-  background: #00adff;
   height: 100px;
   width: 100%;
   display: -webkit-box;
@@ -213,6 +227,12 @@ html {
   font-size: 2.8em;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.about__pictureBox {
+  background: #424a57;
+  background: -webkit-gradient(linear, left bottom, left top, from(#424a57), color-stop(50%, rgba(66, 74, 87, 0)));
+  background: linear-gradient(0deg, #424a57 0%, rgba(66, 74, 87, 0) 50%);
 }
 
 .about__picture {
