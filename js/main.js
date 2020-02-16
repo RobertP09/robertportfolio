@@ -1,12 +1,6 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const navLinks = document.querySelectorAll(".header__link");
-    navLinks[0].classList.toggle("header__link--active");
 
-    navLinks.forEach(nav => {
-        addActive(nav);
-    });
-
-});
+const navLinks = document.querySelectorAll(".header__link");
+navLinks[0].classList.toggle("header__link--active");
 
  const addActive = (element) => {
     element.addEventListener('mouseover', function() {
@@ -16,3 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
         this.classList.remove("header__link--active");
     });
 };
+
+navLinks.forEach(nav => {
+    addActive(nav);
+});

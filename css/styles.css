@@ -183,6 +183,7 @@ html {
   margin: 10% auto;
   background: #424a57;
   height: auto;
+  padding: 0;
 }
 
 .main__button {
@@ -293,13 +294,7 @@ html {
   text-align: center;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-
-.projects__card:hover {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
+  margin: 3em 0;
 }
 
 .projects__cardTitle {
@@ -311,6 +306,15 @@ html {
   border-radius: 10px;
   padding: 10px 0;
   text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.projects__img:hover {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 .projects__description {
@@ -339,5 +343,58 @@ html {
 
 .contact {
   background-color: #424a57;
+  text-align: center;
+}
+
+.contact__container {
+  height: 100%;
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.contact__subtitle {
+  color: #ffffff;
+  font-size: 1.7em;
+  padding: 30px;
+  display: block;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.contact__card {
+  width: 100%;
+  min-width: 250px;
+  max-width: 250px;
+  min-height: 200px;
+}
+
+.contact__logo {
+  height: 125px;
+  display: block;
+  margin: 15px auto;
+}
+
+.contact__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#Capa_1 {
+  fill: #ffffff;
+  height: 125px;
 }
 /*# sourceMappingURL=styles.css.map */
