@@ -6,6 +6,19 @@ $primary-color-light: lighten($primary-color, 15%);
 $primary-color-darken: darken($primary-color, 15%);
 $highlightcolor: #00adff;
 
+/* Animation */
+
+@keyframes neumorph {
+    from {
+        box-shadow: 0;
+    }
+
+    to {
+        box-shadow:  15px 15px 30px #363d47, 
+                    -15px -15px 30px #4e5767;
+    }
+}
+
 /* Normalize */
 * {
     margin: 0;
@@ -210,6 +223,59 @@ html {
 
 .projects {
     background-color: $primary-color;
+    padding: 30px 0;
+
+    &__subtitle {
+        text-align: center;
+        font-size: 1.7em;
+        margin: 20px auto;
+        color: #ffffff;
+        max-width: 700px;
+    }
+
+    a {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    &__card {
+        width: 350px;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            transition: all 0.3s ease-in-out;
+            transform: scale(1.1, 1.1);
+        }
+    }
+
+    &__cardTitle {
+        font-size: 1.4em;
+    }
+
+    &__img {
+        width: 275px;
+        border-radius: 10px;
+        padding: 10px 0;
+        text-align: center;
+    }
+    &__description {
+        color: #fff;
+        padding: 0 10px;
+        font-size: 1em;
+
+        &--bold {
+            font-weight: 600;
+            padding: 5px 0;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 30px;
+    }
 }
 
 .contact {

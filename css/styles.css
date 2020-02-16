@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
 /* Variables*/
+/* Animation */
+@-webkit-keyframes neumorph {
+  from {
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+  }
+  to {
+    -webkit-box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
+            box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
+  }
+}
+@keyframes neumorph {
+  from {
+    -webkit-box-shadow: 0;
+            box-shadow: 0;
+  }
+  to {
+    -webkit-box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
+            box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
+  }
+}
+
 /* Normalize */
 * {
   margin: 0;
@@ -250,6 +272,69 @@ html {
 
 .projects {
   background-color: #424a57;
+  padding: 30px 0;
+}
+
+.projects__subtitle {
+  text-align: center;
+  font-size: 1.7em;
+  margin: 20px auto;
+  color: #ffffff;
+  max-width: 700px;
+}
+
+.projects a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.projects__card {
+  width: 350px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.projects__card:hover {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.projects__cardTitle {
+  font-size: 1.4em;
+}
+
+.projects__img {
+  width: 275px;
+  border-radius: 10px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.projects__description {
+  color: #fff;
+  padding: 0 10px;
+  font-size: 1em;
+}
+
+.projects__description--bold {
+  font-weight: 600;
+  padding: 5px 0;
+}
+
+.projects__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
 }
 
 .contact {
