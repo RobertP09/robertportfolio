@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
 /* Variables*/
 $primary-color: #424a57;
@@ -6,25 +7,17 @@ $primary-color-light: lighten($primary-color, 15%);
 $primary-color-darken: darken($primary-color, 15%);
 $highlightcolor: #00adff;
 
-/* Animation */
-
-@keyframes neumorph {
-    from {
-        box-shadow: 0;
-    }
-
-    to {
-        box-shadow:  15px 15px 30px #363d47, 
-                    -15px -15px 30px #4e5767;
-    }
+/* Icons */
+.react {
+    fill: #61dafb;
 }
-
 /* Normalize */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Muli', sans-serif;
+    //font-family: 'Muli', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body, html {
@@ -220,11 +213,42 @@ html {
         max-width: 700px;
         margin: 20px auto;
     }
+    &__skills {
+        border-top: 1px solid $primary-color-light;
+        background: #fff;
+    }
+    &__skillsList {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        list-style: none;
+        max-width: 70%;
+        margin: 0 auto;
+        align-content: center;
+        align-items: center;
+    }
+    &__skill {
+        font-size: 2em;
+        margin: 20px 10px;
+        width: 100px;
+        font-weight: bold;
+    }
+    &__icon {
+        display: block;
+        margin: 10px auto;
+        width: 50px;
+    }
+    &__subtitle {
+        color: #000;
+        font-weight: bold;
+        text-align: center;
+        font-size: 1.7em;
+        padding: 20px 0;
+    }
 }
 
 .projects {
     background-color: $primary-color;
-    padding: 30px 0;
 
     &__subtitle {
         text-align: center;

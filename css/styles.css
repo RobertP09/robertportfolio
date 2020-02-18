@@ -1,25 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 /* Variables*/
-/* Animation */
-@-webkit-keyframes neumorph {
-  from {
-    -webkit-box-shadow: 0;
-            box-shadow: 0;
-  }
-  to {
-    -webkit-box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
-            box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
-  }
-}
-@keyframes neumorph {
-  from {
-    -webkit-box-shadow: 0;
-            box-shadow: 0;
-  }
-  to {
-    -webkit-box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
-            box-shadow: 15px 15px 30px #363d47,  -15px -15px 30px #4e5767;
-  }
+/* Icons */
+.react {
+  fill: #61dafb;
 }
 
 /* Normalize */
@@ -28,7 +12,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body, html {
@@ -271,9 +255,55 @@ html {
   margin: 20px auto;
 }
 
+.about__skills {
+  border-top: 1px solid #636f83;
+  background: #fff;
+}
+
+.about__skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  max-width: 70%;
+  margin: 0 auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about__skill {
+  font-size: 2em;
+  margin: 20px 10px;
+  width: 100px;
+  font-weight: bold;
+}
+
+.about__icon {
+  display: block;
+  margin: 10px auto;
+  width: 50px;
+}
+
+.about__subtitle {
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.7em;
+  padding: 20px 0;
+}
+
 .projects {
   background-color: #424a57;
-  padding: 30px 0;
 }
 
 .projects__subtitle {
