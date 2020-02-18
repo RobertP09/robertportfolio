@@ -317,7 +317,7 @@ html {
     &__subtitle {
         text-align: center;
         font-size: 1.7em;
-        margin: 20px auto;
+        margin: 30px auto 10px;
         color: #ffffff;
         max-width: 700px;
     }
@@ -400,6 +400,10 @@ html {
         height: 125px;
         display: block;
         margin: 15px auto;
+
+        @media screen and (max-width: $breakpoint-phone) {
+            height: 100px;
+        }
     }
     &__link {
         color: #fff;
@@ -410,4 +414,7 @@ html {
 #Capa_1 {
     fill: #ffffff;
     height: 125px;
+    @media screen and (max-width: $breakpoint-phone) {
+        height: 100px;
+    }
 }

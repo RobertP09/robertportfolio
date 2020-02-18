@@ -564,7 +564,7 @@ html {
 .projects__subtitle {
   text-align: center;
   font-size: 1.7em;
-  margin: 20px auto;
+  margin: 30px auto 10px;
   color: #ffffff;
   max-width: 700px;
 }
@@ -673,6 +673,12 @@ html {
   margin: 15px auto;
 }
 
+@media screen and (max-width: 414px) {
+  .contact__logo {
+    height: 100px;
+  }
+}
+
 .contact__link {
   color: #fff;
   text-decoration: none;
@@ -681,5 +687,11 @@ html {
 #Capa_1 {
   fill: #ffffff;
   height: 125px;
+}
+
+@media screen and (max-width: 414px) {
+  #Capa_1 {
+    height: 100px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
