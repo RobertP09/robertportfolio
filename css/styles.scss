@@ -31,6 +31,7 @@ $breakpoint-phone: 414px;
 body, html {
     width: 100%;
     height: 100%;
+    overflow: hidden;
     
 }
 html {
@@ -101,15 +102,21 @@ html {
         color: #fff;
         text-decoration: none;
         padding-bottom: 30px;
+        position: relative;
         border-bottom: 1px solid #efefef;
+
+        & a {
+            text-decoration: none;
+        }
     }
 
     &__title {
         font-size: 2.4em;
         text-decoration: none;
         color: #fff;
+        line-height: 100%;
     }
-
+    
     &__subtitle{
         color: #fff;
         font-size: 1.4em;
@@ -416,5 +423,36 @@ html {
     height: 125px;
     @media screen and (max-width: $breakpoint-phone) {
         height: 100px;
+    }
+}
+.line {
+    border-right: 2px solid rgba($color: #fff, $alpha: .75);
+    position: relative;
+    margin-top: 15px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.anim-typewriter {
+    animation: typewriter 4s steps(40) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(40) infinite normal;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 6.5em;
+    }
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba($color: #fff, $alpha: .75);
+    }
+    to {
+        border-right-color: transparent;
     }
 }

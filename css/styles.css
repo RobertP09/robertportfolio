@@ -206,6 +206,7 @@
 body, html {
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 
 html {
@@ -290,12 +291,17 @@ html {
     color: #fff;
     text-decoration: none;
     padding-bottom: 30px;
+    position: relative;
     border-bottom: 1px solid #efefef;
+  }
+  .header__logo a {
+    text-decoration: none;
   }
   .header__title {
     font-size: 2.4em;
     text-decoration: none;
     color: #fff;
+    line-height: 100%;
   }
   .header__subtitle {
     color: #fff;
@@ -692,6 +698,58 @@ html {
 @media screen and (max-width: 414px) {
   #Capa_1 {
     height: 100px;
+  }
+}
+
+.line {
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  position: relative;
+  margin-top: 15px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.anim-typewriter {
+  -webkit-animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 1000ms steps(40) infinite normal;
+          animation: typewriter 4s steps(40) 1s 1 normal both, blinkTextCursor 1000ms steps(40) infinite normal;
+}
+
+@-webkit-keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6.5em;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 6.5em;
+  }
+}
+
+@-webkit-keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
   }
 }
 /*# sourceMappingURL=styles.css.map */
