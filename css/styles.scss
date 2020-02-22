@@ -407,6 +407,12 @@ html {
         height: 125px;
         display: block;
         margin: 15px auto;
+        transition: transform .04s ease;
+
+        &:hover {
+            transform: scale(1.1);
+            transition: transform .03s ease;
+        }
 
         @media screen and (max-width: $breakpoint-phone) {
             height: 100px;

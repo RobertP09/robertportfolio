@@ -5,7 +5,7 @@ const linkMenu = document.querySelector(".mHeader__menu");
 const mNavLinks = document.querySelectorAll(".mHeader__link");
 
 // Created a default highlight
-navLinks[0].classList.toggle("header__link--active");
+const highlight = navLinks[0].classList.toggle("header__link--active");
 
 // Functions
  const addActive = (element) => {

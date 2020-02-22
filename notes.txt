@@ -1,13 +1,16 @@
 In case i'd like to use this later
 
-<!--             <form method="POST" name="myemailform" action="/form-to-email.php">
+<!--            
+<form method="POST" name="myemailform" action="/form-to-email.php">
 
-                Enter Name:	<input type="text" name="name">
+Enter Name:	<input type="text" name="name">
                 
-                Enter Email Address:	<input type="text" name="email">
+Enter Email Address:	<input type="text" name="email">
                 
-                Enter Message:	<textarea name="message"></textarea>
+Enter Message:	<textarea name="message"></textarea>
                 
-                <button type="submit" name="submit" id="submitbutton" value="Submit" class="mainButton" onclick="return sent()">SUBMIT</button>
+<button type="submit" name="submit" id="submitbutton" value="Submit" class="mainButton" onclick="return sent()">SUBMIT</button>
 
-                </form> -->
+</form> 
+
+-->

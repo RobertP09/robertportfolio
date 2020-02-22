@@ -652,6 +652,8 @@ html {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .contact__subtitle {
@@ -676,6 +678,19 @@ html {
   height: 125px;
   display: block;
   margin: 15px auto;
+  -webkit-transition: -webkit-transform .04s ease;
+  transition: -webkit-transform .04s ease;
+  transition: transform .04s ease;
+  transition: transform .04s ease, -webkit-transform .04s ease;
+}
+
+.contact__logo:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: -webkit-transform .03s ease;
+  transition: -webkit-transform .03s ease;
+  transition: transform .03s ease;
+  transition: transform .03s ease, -webkit-transform .03s ease;
 }
 
 @media screen and (max-width: 414px) {
