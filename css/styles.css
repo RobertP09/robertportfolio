@@ -592,7 +592,8 @@ html {
 }
 
 .projects__img {
-  width: 275px;
+  height: 250px;
+  max-width: 275px;
   border-radius: 10px;
   padding: 10px 0;
   text-align: center;
